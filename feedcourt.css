@@ -1,0 +1,138 @@
+h1, h2, body, p  {
+  font-family: sans-serif;
+  color: #fefefe;
+  font-size: 12;
+}
+.section_head h2 {
+  max-width: 14rem;
+}
+a, h2 a:visited {
+  color: #aeaeae;
+  text-decoration: none;
+}
+a:visited {
+  color: #333;
+}
+body {
+  background-color: #010101;
+  color: #efefef;
+}
+#footer,
+#header,
+#wrapper {
+  margin-left:auto;
+  margin-right: auto;
+}
+#jumblewrapper,
+#wrapper {
+  padding: 0 1em;
+}
+#jumblewrapper {
+  line-height: 1.24rem;
+  padding: 0 1.5rem;
+  max-width: 40rem;
+}
+
+#footer,
+#header {
+  display: inline-block;
+  padding: 0.5em 1em 0 2em;
+  width: auto;
+}
+#header p { 
+  position: absolute;
+  left: 9em;
+  top: 0.85em;
+  text-transform: lowercase;
+}
+#footer,
+#header h1, p{
+  color: #de4e1c;;
+}
+.sorter {
+  font-weight: 800;
+}
+.sorter a,
+.sorter a:visited{
+  color: green;
+}
+.section {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 30em;
+  overflow: hidden;
+  width: 26em;
+  border: 1px dotted #444;
+  padding: 1.1em;
+  margin: 0.6em 0 0.8em 1.2em;
+}
+.section_head {
+  width: auto;
+}
+.more {
+  width: 2rem;
+  border: 1px solid #333;
+  padding: 0 0.3rem 0.1rem 0.3rem;
+  position: absolute;
+  right: 1rem;
+  top:1.4rem;
+  text-align: center;
+  font-variant: small-caps;
+}
+.entry {
+  border-bottom: 1px solid #333;
+  padding: 0.2em 0;
+  max-width: 25em;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+.jumblesite a:hover,
+.jumble a:hover,
+.section_head h2 a:hover,
+.entry a:hover {
+  color: #efefee;
+}
+@media only screen and (max-device-width: 812px){
+  .jumblewrapper,
+  .wrapper,
+  .section {
+    padding: 0;
+  }
+
+  .more {
+    right: 2.7rem;
+    font-size: larger;
+    color: green;
+  }
+
+  #header p {
+    position: unset;
+    font-size: 2rem; 
+  }
+
+  #jumblewrapper {
+    line-height: 3rem;
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+@media only screen and (max-device-width: 480px) {
+  /* mobile styles */
+ h1 , h2, body, p {
+    font-size: xx-large;
+  }
+  .entry {
+    padding: 0.9em 0;
+    border-bottom: 1px solid #666;
+  }
+  .entry:hover {
+    background-color: #441111;;
+  }
+  .entry:hover a:visited {
+    color: #fefefe; 
+  }
+}
